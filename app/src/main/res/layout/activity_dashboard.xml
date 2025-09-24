@@ -1,10 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DashboardActivity">
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_regular"
+        android:text="Welcome, Caregiver!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Elderly Profile Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/elderlyProfileBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Create Elderly Profile"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_elderly"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText" />
+
+    <!-- Gesture Setup Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gestureSetupBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Customize Gestures"
+        android:textColor="@color/purple_500"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_gesture"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/elderlyProfileBtn"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="2dp" />
+
+    <!-- View Gestures Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewGesturesBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="View Gestures"
+        android:textColor="@color/purple_500"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_gesture"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gestureSetupBtn"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="2dp" />
+
+    <!-- Physical Button Setup -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/physicalButtonSetupBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Setup Physical Buttons"
+        android:textColor="@color/purple_500"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_buttons"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewGesturesBtn"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="2dp" />
+
+    <!-- Logout Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/physicalButtonSetupBtn" />
+
+    <!-- Elderly Mode Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/elderlyModeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Go to Elderly Mode"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/ic_elderly"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoutBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="button_actions">
+        <item>None</item>
+        <item>Play Alert Sound</item>
+        <item>Make Call</item>
+        <item>Send SMS</item>
+        <item>Open App</item>
+        <item>Trigger Custom Gesture</item>
+    </string-array>
+</resources>

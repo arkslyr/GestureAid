@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "488117114776",
+    "project_id": "gestureaid-48276",
+    "storage_bucket": "gestureaid-48276.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488117114776:android:c5156048f4d07935edfded",
+        "android_client_info": {
+          "package_name": "com.example.gestureaid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUWtPfttBOMqEuf8MCzAiHIqB8c95oSlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

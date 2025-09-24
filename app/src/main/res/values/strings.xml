@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GestureAid</string>
+    <string-array name="gesture_actions">
+        <item>Call Emergency Contact</item>
+        <item>Send SMS Alert</item>
+        <item>Open App</item>
+    </string-array>
+
 </resources>

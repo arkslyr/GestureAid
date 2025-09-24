@@ -1,0 +1,21 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Big rounded corners -->
+    <corners android:radius="24dp" />
+
+    <!-- Soft background color -->
+    <solid android:color="#FFE082" /> <!-- Light Yellow for elderly friendly look -->
+
+    <!-- Add a stroke for better visibility -->
+    <stroke
+        android:width="3dp"
+        android:color="#F57C00" /> <!-- Orange border -->
+
+    <!-- Padding -->
+    <padding
+        android:left="16dp"
+        android:top="12dp"
+        android:right="16dp"
+        android:bottom="12dp" />
+</shape>
